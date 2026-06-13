@@ -1,0 +1,218 @@
+:root {
+  --ink: #132238;
+  --ink-soft: #334e68;
+  --paper: #f7fbff;
+  --brand-1: #0b3c5d;
+  --brand-2: #f2a104;
+  --brand-3: #0f766e;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.hero-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgb(242 161 4 / 28%) 0%, transparent 30%),
+    radial-gradient(circle at 80% 10%, rgb(15 118 110 / 32%) 0%, transparent 35%),
+    linear-gradient(135deg, #082136 0%, #0b3c5d 55%, #124f71 100%);
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #ffd06b;
+}
+
+.profile-card {
+  background: rgb(255 255 255 / 10%);
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.section-pad {
+  padding: 4.5rem 0;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, #edf6ff 0%, #f9fcff 100%);
+}
+
+.section-title {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  background: #e3f4f1;
+  border: 1px solid #b7ddd7;
+  color: #0f5f57;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline {
+  border-left: 3px solid #b5d0e8;
+  margin-left: 0.4rem;
+  padding-left: 1.25rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.55rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--brand-2);
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.cert-box {
+  height: 100%;
+  background: var(--card);
+  border: 1px solid #deebf7;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 24px rgb(18 79 113 / 7%);
+}
+
+.experience-section {
+  background:
+    radial-gradient(circle at 6% 10%, rgb(15 118 110 / 8%) 0%, transparent 22%),
+    radial-gradient(circle at 95% 15%, rgb(11 60 93 / 10%) 0%, transparent 28%),
+    #fff;
+}
+
+.experience-intro {
+  border-left: 4px solid var(--brand-2);
+  background: linear-gradient(90deg, rgb(242 161 4 / 8%) 0%, rgb(255 255 255 / 95%) 100%);
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  color: var(--ink-soft);
+}
+
+.exp-role-card {
+  border: 1px solid #dce9f5 !important;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgb(18 79 113 / 14%) !important;
+}
+
+.exp-panel {
+  background: #fff;
+  border: 1px solid #deebf7;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 6px 20px rgb(18 79 113 / 6%);
+}
+
+.exp-panel h3 {
+  margin-bottom: 0.75rem;
+  color: #113650;
+}
+
+.exp-list {
+  margin-bottom: 0;
+}
+
+.exp-list li {
+  margin-bottom: 0.4rem;
+}
+  .projects-section .section-title {
+    margin-bottom: 0.75rem;
+  }
+  .project-card {
+    height: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+    border: 1px solid #dbe7ff;
+    border-left: 4px solid var(--accent);
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  }
+  .project-card h3 {
+    color: #1f2a44;
+    margin-bottom: 0.75rem;
+  }
+  .project-card p {
+    color: #334155;
+  }
+  .project-subsection {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+  .project-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+  }
+  .project-item h4 {
+    color: #0f172a;
+  }
+  .project-item p {
+    color: #334155;
+  }
+
+.pub-list li {
+  margin-bottom: 0.6rem;
+}
+
+.contact-block {
+  background:
+    radial-gradient(circle at 70% 20%, rgb(255 255 255 / 10%) 0%, transparent 35%),
+    linear-gradient(120deg, #10334f 0%, #164f66 100%);
+}
+
+@media (max-width: 767.98px) {
+  .section-pad {
+    padding: 3.25rem 0;
+  }
+
+  .display-4 {
+    font-size: 2.1rem;
+  }
+}
+
